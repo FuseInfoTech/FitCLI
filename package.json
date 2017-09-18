@@ -1,0 +1,29 @@
+{
+  "name": "sfdx-fixdx-plugin",
+  "version": "0.7.2",
+  "description": "A plugin for the Salesforce CLI built by FuseIT and containing a lot of helpful commands.",
+  "main": "index.js",
+  "author": "Daniel Ballinger @FishOfPrey",
+  "repository": "WadeWegner/sfdx-waw-plugin",
+  "bugs": {
+    "url": "https://github.com/wadewegner/sfdx-waw-plugin/issues"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "release": "np"
+  },
+  "keywords": [
+    "force.com",
+    "salesforce",
+    "salesforce-dx",
+    "salesforcedx",
+    "oss"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "edge": "^7.10.1"
+  },
+  "devDependencies": {
+    "edge": "^7.10.1"
+  }
+}
