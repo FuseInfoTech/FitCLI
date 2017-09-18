@@ -14,12 +14,10 @@ A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot o
 
 4. Link the plugin: `sfdx plugins:link .`
 
-## Create a trace flag
+## Get the latest debug log
 
-`sfdx waw:trace:create`
-`sfdx waw:trace:create -u <targetusername>`
+`sfdx fitdx:apex:log:latest -u <targetusername>`
 
-## Delete the trace flag
+## Deployment
 
-`sfdx waw:trace:delete`
-`sfdx waw:trace:delete -u <targetusername>`
+`sfdx fitdx:deployment:fish`
