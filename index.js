@@ -7,10 +7,14 @@ const deploymentFish = require('./commands/deployment_fish.js');
   exports.topics = [{
     name: 'apex',
     description: 'commands for apex'
+  }, 
+{
+    name: 'deployment',
+    description: 'commands for deployments'
   }];
 
   exports.namespace = {
-    name: 'fitdx',
+    name: 'fit',
     description: 'Various commands from FuseIT'
   };
 

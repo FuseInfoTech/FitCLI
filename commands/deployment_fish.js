@@ -5,7 +5,7 @@
     topic: 'deployment',
     command: 'fish',
     description: 'You look like you could use a DeploymentFish',
-    help: 'help text for fitdx:deployment:fish',
+    help: 'help text for fit:deployment:fish',
     flags: [],
     run(context) {
 

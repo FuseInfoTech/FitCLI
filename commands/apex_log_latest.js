@@ -12,7 +12,7 @@ const {
     topic: 'apex',
     command: 'log:latest',
     description: 'get the latest apex log',
-    help: 'help text for fitdx:apex:log:latest',
+    help: 'help text for fit:apex:log:latest',
     flags: [{
       name: 'targetusername',
       char: 'u',
