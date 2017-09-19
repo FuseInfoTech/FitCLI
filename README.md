@@ -11,6 +11,7 @@ A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot o
 2. Clone the repository: `git clone git@github.com:FuseInfoTech/FitCLI.git`
 
 3. Install npm modules: `npm install`
+    1. I use Edge.js as a bridge into the .NET world of my Apex debug log parser. You may need to follow the specific [What you need](https://github.com/tjanczuk/edge#what-you-need) steps for [Windows](https://github.com/tjanczuk/edge#windows), [Linux](https://github.com/tjanczuk/edge#linux), or [OSX](https://github.com/tjanczuk/edge#osx).
 
 4. Link the plugin: `sfdx plugins:link`
 
