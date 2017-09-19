@@ -1,6 +1,18 @@
 const forceUtils = require('../lib/forceUtils.js');
 const edge = require('edge');
-var clrMethod = edge.func({assemblyFile: './lib/NodeEdge.dll'});
+const path = require('path');
+
+
+// edge appears to require an absolute path to the dll.
+var dirParts = __dirname.split(path.sep);
+dirParts.pop(); // commands folder
+dirParts.push('lib');
+dirParts.push('NodeEdge.dll');
+var ddlPath = dirParts.join(path.sep);
+
+var clrMethod = edge.func({assemblyFile: ddlPath});
+
+
 const {
   exec
 } = require('child_process');
@@ -12,7 +24,7 @@ const {
     topic: 'apex',
     command: 'log:latest',
     description: 'get the latest apex log',
-    help: 'help text for fit:apex:log:latest',
+    help: 'help text for fitdx:apex:log:latest',
     flags: [{
       name: 'targetusername',
       char: 'u',
@@ -61,7 +73,7 @@ const {
 
           const apexLogListCommand = `sfdx force:apex:log:list -u ${targetUsername} --json`;
 		  
-		  console.log('running command:' + apexLogListCommand);
+		  //console.log('running command:' + apexLogListCommand);
 
           exec(apexLogListCommand, (err, stdout, stderr) => {
             if (stderr && err) {
@@ -78,7 +90,7 @@ const {
                 const logId = apexLogListJsonOut.result[apexLogListJsonOut.result.length - 1].Id;
                 const apexLogGetByIdCommand = `sfdx force:apex:log:get -i ${logId} -u ${targetUsername}`;
 
-				console.log('Getting log:' + apexLogListCommand);
+				//console.log('Getting log:' + apexLogListCommand);
 				
                 exec(apexLogGetByIdCommand, (err, stdout, stderr) => {
                   if (stderr && err) {

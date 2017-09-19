@@ -21,9 +21,11 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "edge": "^7.10.1"
+    "edge": "^7.10.1",
+	"path": "^0.12.7"
   },
   "devDependencies": {
-    "edge": "^7.10.1"
+    "edge": "^7.10.1",
+	"path": "^0.12.7"
   }
 }
