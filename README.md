@@ -2,8 +2,6 @@
 
 A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot of helpful commands. 
 
-Some code is based off the [sfdx-waw-plugins by Wade Wegner](https://github.com/wadewegner/sfdx-waw-plugin).
-
 ## Setup
 
 ### Install from source
@@ -18,6 +16,8 @@ Some code is based off the [sfdx-waw-plugins by Wade Wegner](https://github.com/
 4. Link the plugin: `sfdx plugins:link`
 
 ## Get the latest debug log
+
+This is based off the same command from the [sfdx-waw-plugins by Wade Wegner](https://github.com/wadewegner/sfdx-waw-plugin). The difference here is that it then runs through the debug log parser.
 
 `sfdx fitdx:apex:log:latest -u <targetusername>`
 
