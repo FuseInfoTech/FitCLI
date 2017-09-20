@@ -1,6 +1,8 @@
 # sfdx-fit-plugins
 
-A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot of helpful commands.
+A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot of helpful commands. 
+
+Some code is based off the [sfdx-waw-plugins by Wade Wegner](https://github.com/wadewegner/sfdx-waw-plugin).
 
 ## Setup
 
