@@ -26,24 +26,24 @@ RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.` try 
 
 This is based off the same command from the [sfdx-waw-plugins by Wade Wegner](https://github.com/wadewegner/sfdx-waw-plugin). The difference here is that it then runs through the debug log parser.
 
-`sfdx fitdx:apex:log:latest -u <targetusername>`
+`sfdx fit:apex:log:latest -u <targetusername>`
 
 ## Get a summary of the latest debug log
 
-`sfdx fitdx:apex:log:latest -u <targetusername> --summary`
+`sfdx fit:apex:log:latest -u <targetusername> --summary`
 
 ## Filter the latest debug log to just the USER_DEBUG entries
 
-`sfdx fitdx:apex:log:latest -u <targetusername> --debugOnly`
+`sfdx fit:apex:log:latest -u <targetusername> --debugOnly`
 
 ## Filter the latest debug log to only the events of interest
 
-`sfdx fitdx:apex:log:latest -u <targetusername> --filter USER_INFO,CODE_UNIT_STARTED`
+`sfdx fit:apex:log:latest -u <targetusername> --filter USER_INFO,CODE_UNIT_STARTED`
 
 ## Convert the latest debug log to JSON
 
-`sfdx fitdx:apex:log:latest -u <targetusername> --json`
+`sfdx fit:apex:log:latest -u <targetusername> --json`
 
 ## Deployment
 
-`sfdx fitdx:deployment:fish`
+`sfdx fit:deployment:fish`
