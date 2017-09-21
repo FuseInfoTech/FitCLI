@@ -1,4 +1,4 @@
-# sfdx-fit-plugins
+# FitCLI
 
 A plugin for the Salesforce CLI built by Daniel Ballinger and containing a lot of helpful commands. 
 
