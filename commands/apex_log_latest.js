@@ -111,7 +111,7 @@ const {
 				  } else if(context.flags.human) {
 					  oMode = 'human';
 				  }
-				  console.log('outputMode:' + oMode);
+				  //console.log('outputMode:' + oMode);
 				  
 				  var filterSettings = '';
 				  if(context.flags.debugOnly) {
