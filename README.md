@@ -21,6 +21,7 @@ RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.` try 
 
 4. Link the plugin: `sfdx plugins:link` (from within the FitCLI directory).
     1. If you get a `A required privilege is not held by the client.` try elevating to an Admin command prompt.
+    1. On Windows at least this is creating a shortcut in `%LocalAppData%\heroku\plugins\node_modules`
 
 ## Get the latest debug log
 
