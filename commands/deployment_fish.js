@@ -1,3 +1,5 @@
+const path = require('path');
+
 (function () {
   'use strict';
 
@@ -5,7 +7,7 @@
     topic: 'deployment',
     command: 'fish',
     description: 'You look like you could use a DeploymentFish',
-    help: 'help text for fitdx:deployment:fish',
+    help: 'It is a deployment fish... for your command line!',
     flags: [],
     run(context) {
 
@@ -102,6 +104,10 @@ var asciiArt2 = `
 `;
 	  
 	  console.log(asciiArt2);
+	  
+	  //console.log('Path');
+	  //console.log(__dirname);
+	  //console.log(__dirname.split(path.sep).pop());
 	  
     }
   };

@@ -1,5 +1,5 @@
 const forceUtils = require('../lib/forceUtils.js');
-const edge = require('edge-js');
+const edge = require('edge');
 var clrMethod = edge.func({assemblyFile: './lib/NodeEdge.dll'});
 const {
   exec
