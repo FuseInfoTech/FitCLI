@@ -1,5 +1,6 @@
 const apexLogLatest = require('./commands/apex_log_latest.js');
 const deploymentFish = require('./commands/deployment_fish.js');
+const dependencyAnalysis = require('./commands/dependency_analysis.js');
 
 (function () {
   'use strict';
@@ -7,20 +8,23 @@ const deploymentFish = require('./commands/deployment_fish.js');
   exports.topics = [{
     name: 'apex',
     description: 'commands for apex'
-  }, 
-{
+  },{
+    name: 'dependencies',
+    description: 'commands for dependencies analysis'
+  },{
     name: 'deployment',
-    description: 'commands for deployments'
+    description: 'commands for deployment'
   }];
 
   exports.namespace = {
-    name: 'fit',
+    name: 'fitdx',
     description: 'Various commands from FuseIT'
   };
 
   exports.commands = [
     apexLogLatest,
-	deploymentFish
+	deploymentFish,
+	dependencyAnalysis
   ];
 
 }());
